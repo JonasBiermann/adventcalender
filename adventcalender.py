@@ -155,7 +155,7 @@ def main():
         if choice.isdigit():
             choice_num = int(choice)
             if 1 <= choice_num <= 24:
-                door_date = datetime.datetime(2025, 12, choice_num) 
+                door_date = datetime.datetime(2024, 12, choice_num) 
                 now = datetime.datetime.now()
                 if now >= door_date:
                     with open('data.json', 'r', encoding='utf-8') as f:
